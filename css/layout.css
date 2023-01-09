@@ -47,6 +47,12 @@ p {
   display: flex;
   flex-direction: row;
 }
+.header .gnb__list > li:hover > a {
+  color: #297bf6;
+}
+.header .gnb__list > li:hover > a:after {
+  transform: scaleX(1);
+}
 .header .gnb__list > li > a {
   font-size: 18px;
   font-weight: 700;
@@ -55,12 +61,6 @@ p {
   height: 100px;
   padding: 0 60px;
   position: relative;
-}
-.header .gnb__list > li > a:hover {
-  color: #297bf6;
-}
-.header .gnb__list > li > a:hover:after {
-  transform: scaleX(1);
 }
 .header .gnb__list > li > a:after {
   content: "";
@@ -86,4 +86,10 @@ p {
   display: flex;
   padding: 10px 0;
   justify-content: center;
+}
+.header .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }

@@ -54,6 +54,16 @@ p {
       display: flex;
       flex-direction: row;
       > li {
+        &:hover {
+          > a {
+            color: $blue;
+            &:after {
+              //width: 100%;
+              //left: 0;
+              transform: scaleX(1);
+            }
+          }
+        }
         > a {
           //font-size: 18px;
           //font-weight: 700;
@@ -67,14 +77,7 @@ p {
           padding: 0 60px;
           position: relative;
           //outline: 1px solid red;
-          &:hover {
-            color: $blue;
-            &:after {
-              //width: 100%;
-              //left: 0;
-              transform: scaleX(1);
-            }
-          }
+
           &:after {
             content: "";
             display: block;
@@ -107,5 +110,12 @@ p {
         }
       }
     }
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
 }

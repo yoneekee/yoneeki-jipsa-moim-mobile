@@ -84,7 +84,7 @@
           </li>
         </ul>
       </nav>
-      <a href="" class="link">결제내역조회</a>
+      <a href="" class="link"><span>결제내역조회</span></a>
     </header>
     <!-- header end -->
     <main>
@@ -101,20 +101,19 @@
         </span>
       </section>
     </main>
+
+    <script>
+      const header = document.querySelector(".header");
+      const gnb = document.querySelector(".gnb");
+      const link = document.querySelector(".link");
+      gnb.addEventListener("mouseenter", function () {
+        header.classList.add("on");
+        link.classList.add("hidden");
+      });
+      gnb.addEventListener("mouseleave", function () {
+        header.classList.remove("on");
+        link.classList.remove("hidden");
+      });
+    </script>
   </body>
-
-  <script>
-    const header = document.querySelector(".header");
-    const gnb = document.querySelector(".gnb");
-
-    const nav_on = function () {
-      header.classList.add("on");
-    };
-    const nav_off = function () {
-      header.classList.remove("on");
-    };
-
-    gnb.addEventListener("mouseenter", nav_on);
-    gnb.addEventListener("mouseleave", nav_off);
-  </script>
 </html>
