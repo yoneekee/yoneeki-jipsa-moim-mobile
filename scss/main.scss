@@ -1,4 +1,52 @@
 @import "vars";
-.main {
-  background-color: $blue;
+.main-video {
+  video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  &__txt {
+    font-size: 64px * 1.5;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+  }
+
+  .red {
+    color: $red;
+  }
+  .blue {
+    color: $blue;
+  }
+
+  .arrow {
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+    color: #fff;
+    border: 2px solid $white;
+    border-radius: 50px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+  }
+
+  .arrow:hover {
+    background-color: $white;
+    color: black;
+  }
+}
+
+@keyframes arrow-move {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50px);
+  }
 }
