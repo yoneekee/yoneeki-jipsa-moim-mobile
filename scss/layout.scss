@@ -27,7 +27,18 @@ p {
   width: 100%;
   box-sizing: border-box;
   color: #fff;
-  overflow: hidden;
+  overflow: hidden; // 100px 넘어선 것들은 잘라버리겠다.
+  transition: all 0.25s ease;
+  // &:hover {
+  //   height: 380px;
+  //   background-color: #fff;
+  //   color: #111;
+  // }
+  &.on {
+    height: 380px;
+    background-color: #fff;
+    color: #111;
+  }
   .logo {
     &__link {
       display: flex;

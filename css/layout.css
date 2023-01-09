@@ -28,6 +28,12 @@ p {
   box-sizing: border-box;
   color: #fff;
   overflow: hidden;
+  transition: all 0.25s ease;
+}
+.header.on {
+  height: 380px;
+  background-color: #fff;
+  color: #111;
 }
 .header .logo__link {
   display: flex;
