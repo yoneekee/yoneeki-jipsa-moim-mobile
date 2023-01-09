@@ -11,23 +11,27 @@
       type="image/x-icon"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css?family=Lato"
       rel="stylesheet"
+      type="text/css"
     />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <!-- google icons / fonts -->
+
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/pretendard.css" />
     <link rel="stylesheet" href="../css/layout.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/aos.css" />
-
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -36,6 +40,7 @@
 
     <script src="../js/aos.js"></script>
     <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/calender.js"></script>
     <!--js-->
   </head>
   <body>
@@ -152,22 +157,188 @@
       <!-- main-video-->
 
       <section class="banner container">
-        <div class="banner-wrap">
-          <img src="../images/layout/cat_favi_01.png" alt="" />
-          <h2>cat 01</h2>
-          <p>cat cat cat</p>
+        <div class="banner-wrap" data-aos="fade-down" data-aos-delay="300">
+          <a href="">
+            <img src="../images/layout/cat_favi_01.png" alt="" />
+            <h2>다묘 모임</h2>
+            <p>
+              <span class="arrow-left">다묘 집사들 모임</span>
+              <span class="material-symbols-outlined arrow-right arrow">
+                arrow_forward_ios
+              </span>
+            </p>
+          </a>
+        </div>
+        <div class="banner-wrap" data-aos="fade-up" data-aos-delay="400">
+          <a href="">
+            <img src="../images/layout/cat_favi_06.png" alt="" />
+            <h2>노묘 모임</h2>
+            <p>
+              <span class="arrow-left">노묘 집사들 모임</span>
+              <span class="material-symbols-outlined arrow-right arrow">
+                arrow_forward_ios
+              </span>
+            </p>
+          </a>
+        </div>
+        <div class="banner-wrap" data-aos="fade-down" data-aos-delay="500">
+          <a href="">
+            <img src="../images/layout/cat_favi_03.png" alt="" />
+            <h2>예비 집사</h2>
+            <p>
+              <span class="arrow-left">예비 집사 모임</span>
+              <span class="material-symbols-outlined arrow-right arrow">
+                arrow_forward_ios
+              </span>
+            </p>
+          </a>
+        </div>
+      </section>
+
+      <section class="calendar container">
+        <div class="calendar_cal">
+          <div class="calendar-wrap">
+            <h2 class="month-year">January 2023</h2>
+
+            <table class="calendar">
+              <thead>
+                <tr>
+                  <th class="day-title" scope="col">Sun</th>
+                  <th class="day-title" scope="col">Mon</th>
+                  <th class="day-title" scope="col">Tue</th>
+                  <th class="day-title" scope="col">Wed</th>
+                  <th class="day-title" scope="col">Thu</th>
+                  <th class="day-title" scope="col">Fri</th>
+                  <th class="day-title" scope="col">Sat</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="week">
+                  <td class="day prev-mon" tabindex="0">
+                    <span class="day-number">29</span>
+                  </td>
+                  <td class="day prev-mon" tabindex="0">
+                    <span class="day-number">30</span>
+                  </td>
+                  <td class="day prev-mon" tabindex="0">
+                    <span class="day-number">31</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">1</span>
+                  </td>
+                  <td class="day today" tabindex="0">
+                    <span class="day-number">2</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">3</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">4</span>
+                  </td>
+                </tr>
+                <tr class="week">
+                  <td class="day" tabindex="0">
+                    <span class="day-number">5</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">6</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">7</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">8</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">9</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">10</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">11</span>
+                  </td>
+                </tr>
+                <tr class="week">
+                  <td class="day" tabindex="0">
+                    <span class="day-number">12</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">13</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">14</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">15</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">16</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">17</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">18</span>
+                  </td>
+                </tr>
+                <tr class="week">
+                  <td class="day" tabindex="0">
+                    <span class="day-number">19</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">20</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">21</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">22</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">23</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">24</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">25</span>
+                  </td>
+                </tr>
+                <tr class="week">
+                  <td class="day" tabindex="0">
+                    <span class="day-number">26</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">27</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">28</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">29</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">30</span>
+                  </td>
+                  <td class="day" tabindex="0">
+                    <span class="day-number">31</span>
+                  </td>
+                  <td class="day next-mon" tabindex="0">
+                    <span class="day-number">1</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <a class="button reset">Clear date-range</a>
+          </div>
         </div>
 
-        <div class="banner-wrap">
-          <img src="../images/layout/cat_favi_06.png" alt="" />
-          <h2>cat 01</h2>
-          <p>cat cat cat</p>
-        </div>
-
-        <div class="banner-wrap">
-          <img src="../images/layout/cat_favi_03.png" alt="" />
-          <h2>cat 01</h2>
-          <p>cat cat cat</p>
+        <div class="calendar_txt">
+          <h1>정기 집사 모임</h1>
+          <h2>스케쥴을 확인해 보세요</h2>
+          <p>이번 달 이벤트 : 유튜버 냥냥 님 강의</p>
         </div>
       </section>
     </main>

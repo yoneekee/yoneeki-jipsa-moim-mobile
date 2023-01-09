@@ -1,89 +1,11 @@
-.main-video video {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  filter: brightness(75%);
-}
-.main-video__txt {
-  font-size: 96px;
-  font-weight: 700;
-  position: absolute;
-  top: 50%;
-  left: 100px;
-  transform: translateY(-50%);
-  color: #fff;
-}
-.main-video__txt .purple {
-  color: #792b85;
-}
-.main-video__txt .lightpurple {
-  color: #c4a1ca;
-}
-.main-video .arrow {
-  position: absolute;
-  flex-direction: column;
-  left: 100px;
-  bottom: 100px;
-  width: 140px;
-  height: 140px;
-  border: 2px dotted #c4a1ca;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: arrow-move 0.5s ease infinite alternate;
-}
-.main-video .arrow:hover {
-  color: #fff;
-  background-color: #792b85;
-  border: solid 1px #792b85;
-}
-
-/********* main-video end ********/
-.banner {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 50px 0;
-}
-.banner h2 {
-  line-height: 2;
-}
-.banner .banner-wrap {
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  margin-left: 5px;
-  margin-bottom: 10px;
-  width: 31%;
-}
-.banner .banner-wrap img {
-  max-width: 100%;
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-}
-.banner .banner-wrap .arrow-left {
-  display: inline-block;
-  animation: arrow-left 0.5s ease infinite alternate;
-}
-.banner .banner-wrap .arrow-right {
-  animation: arrow-right 0.5s ease infinite alternate;
-}
-
-/************ banner end *************/
-.calendar_txt {
-  padding: 0 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.calendar_cal, .calendar_cal::before, .calendar_cal::after {
+.calendar_cal,
+.calendar_cal::before,
+.calendar_cal::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 .calendar_cal {
   display: flex;
   min-height: 100vh;
@@ -91,16 +13,7 @@
   color: #37474f;
   line-height: 1.5;
   font-family: Lato, sans-serif;
-}
-.calendar-wrap {
-  width: 100%;
-  padding: 0.75em;
-  margin: auto;
-  font-size: 4vw;
-  background-color: #fff;
-  border-radius: 1.5em;
-  user-select: none;
-  box-shadow: 0 0.0625em 0.25em rgba(0, 20, 50, 0.2), 0 0.5em 0.5em 0.125em rgba(0, 20, 50, 0.1);
+  background-color: #cfd8dc;
 }
 
 .note {
@@ -123,12 +36,25 @@
   cursor: pointer;
 }
 
+.calendar-wrap {
+  width: 100%;
+  padding: 0.75em;
+  margin: auto;
+  font-size: 4vw;
+  background-color: #fff;
+  border-radius: 1.5em;
+  user-select: none;
+  box-shadow: 0 0.0625em 0.25em rgba(0, 20, 50, 0.2),
+    0 0.5em 0.5em 0.125em rgba(0, 20, 50, 0.1);
+}
+
 @media (min-width: 500px) {
   .calendar-wrap {
     width: 450px;
     font-size: 1.25rem;
   }
 }
+
 .month-year {
   margin-bottom: 0.75em;
   font-weight: normal;
@@ -255,8 +181,8 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
-.day.prev-mon[class*=active] .day-number,
-.day.next-mon[class*=active] .day-number {
+.day.prev-mon[class*="active"] .day-number,
+.day.next-mon[class*="active"] .day-number {
   color: rgba(255, 255, 255, 0.5);
   background-color: #81d4fa;
 }
@@ -270,31 +196,3 @@
 .calendar-wrap .reset {
   display: block;
 }
-
-/************ calender end ************/
-/**************************************/
-@keyframes arrow-move {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(50px);
-  }
-}
-@keyframes arrow-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-10px);
-  }
-}
-@keyframes arrow-right {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(10px);
-  }
-}
-/**************************************/
