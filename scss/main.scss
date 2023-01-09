@@ -86,17 +86,18 @@
 
 .calendar {
   &_txt {
-    padding: 0 100px;
+    padding: 0 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // background-color: red;
   }
 
   &_cal,
   &_cal::before,
   &_cal::after {
-    padding: 0;
+    padding: 20px;
     margin: 0;
     box-sizing: border-box;
   }
