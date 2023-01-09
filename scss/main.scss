@@ -14,25 +14,32 @@
     transform: translateY(-50%);
     color: #fff;
     //animation: arrow-move 1s ease infinite alternate;
-    .red {
-      color: $red;
+    .purple {
+      color: $purple;
     }
-    .blue {
-      color: $blue;
+    .lightpurple {
+      color: $lightpurple;
     }
   }
   .arrow {
     position: absolute;
+    flex-direction: column;
     left: 100px;
     bottom: 100px;
-    background-color: #fff;
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
+    border: 2px dotted $lightpurple;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     animation: arrow-move 0.5s ease infinite alternate;
+
+    &:hover {
+      color: $white;
+      background-color: $purple;
+      border: solid 1px $purple;
+    }
   }
 }
 
