@@ -1,27 +1,34 @@
-body {
-  font-family: "Lato", "Pretendard", "Dotum", sans-serif;
-  font-size: 16px;
-  color: #111;
+@charset "UTF-8";
+@font-face {
+  font-family: "neoCircle"; /* 폰트 이름은 임의로 설정 */
+  src: url("../font/woff-neoCircle/neodgm.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 700;
 }
 
 p {
   font-size: 22px;
   font-weight: 400;
+}
+
+body {
+  font-family: "neoCircle";
+  font-size: 16px;
+  color: #111;
 }
 
 .container {
@@ -113,10 +120,10 @@ p {
   justify-content: center;
   align-items: center;
   position: relative;
-  font-size: 20px;
+  font-size: 17px;
 }
 .header .link:hover {
-  font-weight: 900;
+  color: black;
 }
 
 .on2 {
@@ -124,6 +131,5 @@ p {
   color: #792b85;
 }
 .on2 .link:hover {
-  font-weight: 900;
   transform: all 0.25s ease;
 }
