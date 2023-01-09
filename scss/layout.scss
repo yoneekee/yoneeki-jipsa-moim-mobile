@@ -8,13 +8,20 @@ a {
   color: inherit;
   text-decoration: none;
 }
-p {
-  line-height: 1.5;
-}
 
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .header {
   /* header */
   $h: 100px;
+  color: $gray;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -26,14 +33,9 @@ p {
   position: fixed;
   width: 100%;
   box-sizing: border-box;
-  color: #fff;
   overflow: hidden; // 100px 넘어선 것들은 잘라버리겠다.
   transition: all 0.25s ease;
-  // &:hover {
-  //   height: 380px;
-  //   background-color: #fff;
-  //   color: #111;
-  // }
+
   &.on {
     height: 380px;
     background-color: $lightlightpurple;
@@ -122,5 +124,20 @@ p {
     justify-content: center;
     align-items: center;
     position: relative;
+    font-size: 20px;
+
+    &:hover {
+      font-weight: 900;
+    }
+  }
+}
+
+.on2 {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: $purple;
+
+  .link:hover {
+    font-weight: 900;
+    transform: all 0.25s ease;
   }
 }

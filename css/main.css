@@ -46,3 +46,23 @@
     transform: translateY(50px);
   }
 }
+/********* main-video end ********/
+.banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.banner .banner-wrap {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  width: 33%;
+}
+.banner .banner-wrap img {
+  width: 50%;
+  height: 300px;
+  object-fit: cover;
+}

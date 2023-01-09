@@ -26,6 +26,17 @@
     <link rel="stylesheet" href="../css/pretendard.css" />
     <link rel="stylesheet" href="../css/layout.css" />
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/aos.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- css -->
+
+    <script src="../js/aos.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <!--js-->
   </head>
   <body>
     <header class="header">
@@ -111,15 +122,22 @@
       <a href="" class="link"><span>회원가입/로그인</span></a>
     </header>
     <!-- header end -->
+
     <main>
       <section class="main-video">
         <h2 class="hidden">main video</h2>
         <video src="../video/cat.mp4" autoplay muted loop></video>
         <div class="main-video__txt">
-          Cat <br />
-          Rules <br />
-          <span class="lightpurple">the</span>&nbsp;
-          <span class="purple">World</span>.
+          <p data-aos="fade-left" data-aos-delay="400">Cat</p>
+          <p data-aos="fade-right" data-aos-delay="500">Rules</p>
+          <p>
+            <span class="lightpurple" data-aos="fade-up" data-aos-delay="700"
+              >the</span
+            >
+            <span class="purple" data-aos="fade-up" data-aos-delay="900"
+              >World</span
+            >
+          </p>
         </div>
         <a href="#">
           <div class="arrow">
@@ -129,9 +147,36 @@
           </div>
         </a>
       </section>
+      <!-- main-video-->
+
+      <section class="banner container">
+        <div class="banner-wrap">
+          <img src="../images/layout/cat_favi_01.png" alt="" />
+          <h2>cat 01</h2>
+          <p>cat cat cat</p>
+        </div>
+
+        <div class="banner-wrap">
+          <img src="../images/layout/cat_favi_06.png" alt="" />
+          <h2>cat 01</h2>
+          <p>cat cat cat</p>
+        </div>
+
+        <div class="banner-wrap">
+          <img src="../images/layout/cat_favi_03.png" alt="" />
+          <h2>cat 01</h2>
+          <p>cat cat cat</p>
+        </div>
+      </section>
     </main>
 
     <script>
+      // aos
+      AOS.init({
+        duration: 600,
+        delay: 200,
+      });
+
       const header = document.querySelector(".header");
       const gnb = document.querySelector(".gnb");
       const link = document.querySelector(".link");
@@ -142,6 +187,14 @@
       gnb.addEventListener("mouseleave", function () {
         header.classList.remove("on");
         link.classList.remove("hidden");
+      });
+
+      window.addEventListener("scroll", function (e) {
+        if (window.scrollY > 0) {
+          header.classList.add("on2");
+        } else {
+          header.classList.remove("on2");
+        }
       });
     </script>
   </body>
