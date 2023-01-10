@@ -1,4 +1,6 @@
 @import "vars";
+@import "function";
+
 @font-face {
   font-family: "neoCircle"; /* 폰트 이름은 임의로 설정 */
   src: url("../font/woff-neoCircle/neodgm.woff2") format("woff2");
@@ -36,6 +38,10 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.center {
+  @include center();
 }
 .header {
   /* header */

@@ -1,0 +1,20 @@
+// 파싱, 컴파일 하지 않는다
+
+// scss에서 제공하는 text-shadow 기능을
+// 재정의해서 나한테 맞게 쓰기
+@mixin longShadow($limit: 30, $color: rgba(0, 0, 0, 1)) {
+  //1px 1px
+  $shadow: "";
+  @for $i from 1 to $limit {
+    $shadow: $shadow + $i + "px " + $i + "px 0px " + $color + ",";
+  }
+  $shadow: $shadow + $limit + "px " + $limit + "px 0px " + $color;
+  $shadow: unquote($shadow);
+  text-shadow: $shadow;
+}
+
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

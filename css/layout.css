@@ -37,6 +37,12 @@ body {
   justify-content: space-between;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header {
   /* header */
   color: #c4c4c4;

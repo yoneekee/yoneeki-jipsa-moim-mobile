@@ -1,4 +1,6 @@
 @import "vars";
+@import "function";
+
 .main-video {
   video {
     width: 100%;
@@ -22,6 +24,7 @@
       color: $lightpurple;
     }
   }
+
   .arrow {
     position: absolute;
     flex-direction: column;
@@ -43,8 +46,21 @@
     }
   }
 }
-
 /********* main-video end ********/
+
+.typing {
+  padding: 100px 20px;
+  .type {
+    position: absolute;
+    display: inline-block;
+    .text--0 {
+      font-size: 80px;
+      color: $lightlightpurple;
+      @include longShadow(30, darken($pinkpurple, 10));
+    }
+  }
+}
+/************** typing end *************/
 .banner {
   display: flex;
   justify-content: space-between;

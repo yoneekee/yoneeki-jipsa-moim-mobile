@@ -40,6 +40,20 @@
 }
 
 /********* main-video end ********/
+.typing {
+  padding: 100px 20px;
+}
+.typing .type {
+  position: absolute;
+  display: inline-block;
+}
+.typing .type .text--0 {
+  font-size: 80px;
+  color: #fef6ff;
+  text-shadow: 1px 1px 0px rgba(196, 113, 196, 0.9450980392),2px 2px 0px rgba(196, 113, 196, 0.9450980392),3px 3px 0px rgba(196, 113, 196, 0.9450980392),4px 4px 0px rgba(196, 113, 196, 0.9450980392),5px 5px 0px rgba(196, 113, 196, 0.9450980392),6px 6px 0px rgba(196, 113, 196, 0.9450980392),7px 7px 0px rgba(196, 113, 196, 0.9450980392),8px 8px 0px rgba(196, 113, 196, 0.9450980392),9px 9px 0px rgba(196, 113, 196, 0.9450980392),10px 10px 0px rgba(196, 113, 196, 0.9450980392),11px 11px 0px rgba(196, 113, 196, 0.9450980392),12px 12px 0px rgba(196, 113, 196, 0.9450980392),13px 13px 0px rgba(196, 113, 196, 0.9450980392),14px 14px 0px rgba(196, 113, 196, 0.9450980392),15px 15px 0px rgba(196, 113, 196, 0.9450980392),16px 16px 0px rgba(196, 113, 196, 0.9450980392),17px 17px 0px rgba(196, 113, 196, 0.9450980392),18px 18px 0px rgba(196, 113, 196, 0.9450980392),19px 19px 0px rgba(196, 113, 196, 0.9450980392),20px 20px 0px rgba(196, 113, 196, 0.9450980392),21px 21px 0px rgba(196, 113, 196, 0.9450980392),22px 22px 0px rgba(196, 113, 196, 0.9450980392),23px 23px 0px rgba(196, 113, 196, 0.9450980392),24px 24px 0px rgba(196, 113, 196, 0.9450980392),25px 25px 0px rgba(196, 113, 196, 0.9450980392),26px 26px 0px rgba(196, 113, 196, 0.9450980392),27px 27px 0px rgba(196, 113, 196, 0.9450980392),28px 28px 0px rgba(196, 113, 196, 0.9450980392),29px 29px 0px rgba(196, 113, 196, 0.9450980392),30px 30px 0px rgba(196, 113, 196, 0.9450980392);
+}
+
+/************** typing end *************/
 .banner {
   display: flex;
   justify-content: space-between;

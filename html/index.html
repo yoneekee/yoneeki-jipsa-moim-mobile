@@ -41,16 +41,13 @@
     <script src="../js/aos.js"></script>
     <script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/calender.js"></script>
-    <!--js-->
+    <!-- js -->
   </head>
   <body>
     <header class="header">
       <h1 class="logo">
         <a href="" class="logo__link"
-          ><img
-            src="../images/layout/logo.png"
-            alt="다날 로고"
-            class="logo__img"
+          ><img src="../images/layout/logo.png" alt="로고" class="logo__img"
         /></a>
       </h1>
       <nav class="gnb">
@@ -146,15 +143,25 @@
             >
           </h1>
         </div>
-        <a href="#">
-          <div class="arrow">
+        <div class="arrow">
+          <a href="#">
             <img src="../images/layout/cat_favi_02.png" alt="catfavi" />
             <p>집사모임</p>
             <p>참여하기</p>
-          </div>
-        </a>
+          </a>
+        </div>
       </section>
       <!-- main-video-->
+
+      <section class="typing center">
+        <!-- <div class="intro">
+          <h1 class="text"></h1>
+        </div> -->
+        <div class="type" data-aos="fade-down" data-aos-delay="600">
+          <h1 class="text"></h1>
+        </div>
+      </section>
+      <!-- typing end -->
 
       <section class="banner container">
         <div class="banner-wrap" data-aos="fade-down" data-aos-delay="600">
@@ -162,7 +169,7 @@
             <img src="../images/layout/cat_favi_01.png" alt="" />
             <h2>다묘 모임</h2>
             <p>
-              <span class="arrow-left">다묘 집사들 모임</span>
+              <span class="arrow-left text--1">다묘 집사들 모임</span>
               <span class="material-symbols-outlined arrow-right arrow">
                 arrow_forward_ios
               </span>
@@ -194,6 +201,7 @@
           </a>
         </div>
       </section>
+      <!-- banner end -->
 
       <section class="calendar container">
         <div class="calendar_cal" data-aos="fade-right">
@@ -341,6 +349,7 @@
           <p>이번 달 이벤트 : 유튜버 냥냥 님 강의</p>
         </div>
       </section>
+      <!-- calendar end -->
     </main>
 
     <script>
@@ -370,5 +379,8 @@
         }
       });
     </script>
+
+    <script src="../js/typing.js"></script>
+    <!--js-->
   </body>
 </html>
