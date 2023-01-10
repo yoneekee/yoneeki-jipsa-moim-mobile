@@ -65,7 +65,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 50px 0;
+  padding-bottom: 200px;
 }
 .banner h2 {
   line-height: 2;
@@ -293,6 +293,97 @@
 }
 
 /************ calender end ************/
+.cat-news {
+  background-image: url("../images/layout/cat_cover.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(39, 35, 35);
+}
+.cat-news .container {
+  display: flex;
+  justify-content: space-between;
+}
+.cat-news .container .title-box {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cat-news .container .contents {
+  width: 55%;
+  padding: 100px 0;
+}
+.cat-news .container .contents .cat-news__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.cat-news .container .contents .cat-news__list > li {
+  width: calc(50% - 30px);
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.45);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.55);
+}
+.cat-news .container .contents .cat-news__list > li .num_arrow {
+  font-size: 48px;
+  font-weight: 900;
+  color: #ff4634;
+}
+.cat-news .container .contents .cat-news__list > li .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+.cat-news .container .contents .cat-news__list > li .title h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.cat-news .container .contents .cat-news__list > li .title span {
+  display: flex;
+  align-items: center;
+}
+.cat-news .container .contents .cat-news__list > li .title span:after {
+  font-size: 24px;
+  display: inline-block;
+  content: "trending_flat";
+  margin-left: 10px;
+  font-family: "Material Icons";
+}
+.cat-news .container .contents .cat-news__list > li:nth-child(1) .title span:after {
+  display: none;
+}
+.cat-news .container .contents .cat-news__list > li ul li {
+  margin-top: 10px;
+}
+.cat-news .container .contents .cat-news__list > li ul li a {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 100px;
+  position: relative;
+}
+.cat-news .container .contents .cat-news__list > li ul li a .date {
+  position: absolute;
+  right: 0;
+}
+.cat-news .container .contents .cat-news__list > li .num_main {
+  font-size: 48px;
+  font-weight: 900;
+}
+.cat-news .container .contents .cat-news__list > li .num_state {
+  color: #297bf6;
+}
+.cat-news .container .contents .cat-news__list > li .num_company {
+  margin-left: auto;
+}
+
+/*************** cat-news end******************/
 /**************************************/
 @keyframes arrow-move {
   0% {
