@@ -60,13 +60,14 @@
     display: inline-block;
     .text_0 {
       padding-bottom: 100px;
-      font-size: 80px;
+      font-size: 120px;
       color: $lightlightpurple;
       @include longShadow(30, darken($pinkpurple, 10));
     }
   }
 }
 /************** typing end *************/
+
 .banner {
   display: flex;
   justify-content: space-between;
@@ -103,8 +104,228 @@
     }
   }
 }
-
 /************ banner end *************/
+
+.competition {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 50px;
+
+  .container {
+    width: 100%;
+  }
+
+  .title-box {
+    text-align: center;
+    margin-bottom: 30px;
+    h2 {
+      color: $purple;
+    }
+  }
+  .competiton_wrap {
+    position: relative;
+  }
+
+  .competition-list {
+    margin-bottom: 100px;
+    li {
+      width: 300px;
+      position: relative;
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+
+      .img-box {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 50%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: all 0.25s ease;
+        }
+      }
+
+      .sticker {
+        position: absolute;
+        color: #fff;
+        padding: 10px 30px;
+        border-radius: 100px;
+        text-transform: uppercase;
+        opacity: 0.85;
+        @include longShadow(20, darken($red, 10));
+        overflow: hidden;
+        box-sizing: border-box;
+        background-color: $red;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        top: 50px;
+        left: 60%;
+        white-space: nowrap; // 무조건 두 줄 안 되고 한줄로
+      }
+
+      .title {
+        display: block;
+        text-align: center;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .btn {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid $purple;
+    z-index: 1;
+    &--prev {
+      left: 50px;
+      color: $purple;
+      text-align: center;
+      opacity: 0.7;
+      &::after {
+        font-size: 48px;
+        @include icon("chevron_left", 0);
+      }
+    }
+    &--next {
+      right: 50px;
+      color: $purple;
+      text-align: center;
+      opacity: 0.7;
+      &::after {
+        font-size: 48px;
+        @include icon("chevron_right", 0);
+      }
+    }
+  }
+
+  .vote {
+    padding: 20px 40px;
+    background-color: $lightpurple;
+    color: $white;
+    width: 500px;
+    margin: 80px auto;
+    text-align: center;
+    border-radius: 40px;
+  }
+}
+/*********** competition end **************/
+
+.cat-news {
+  background-image: url("../images/main/cat_cover.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: $black;
+  h2 {
+    font-size: 64px;
+    padding: 10px;
+  }
+  p {
+    font-size: 32px;
+    padding: 20px;
+    text-align: center;
+    color: $white;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .title-box {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .contents {
+      width: 55%;
+      padding: 100px 0;
+      .cat-news__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        > li {
+          width: calc(50% - 30px);
+          padding: 30px;
+          box-sizing: border-box;
+          background-color: rgba(255, 255, 255, 0.45);
+          border-radius: 20px;
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.55);
+
+          .num_arrow {
+            font-size: 48px;
+            font-weight: 900;
+            color: $red;
+          }
+
+          .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            h3 {
+              font-size: 40px;
+              text-transform: uppercase;
+            }
+            span {
+              display: flex;
+              align-items: center;
+            }
+            span:after {
+              font-size: 24px;
+              @include icon("trending_flat");
+            }
+          }
+          &:nth-child(1) .title span:after {
+            display: none;
+          }
+          ul {
+            li {
+              margin-top: 10px;
+              a {
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding-right: 100px;
+                position: relative;
+
+                .date {
+                  position: absolute;
+                  right: 0;
+                }
+              }
+            }
+          }
+          .num {
+            &_main {
+              font-size: 48px;
+              font-weight: 900;
+            }
+            &_state {
+              color: $blue;
+            }
+            &_company {
+              margin-left: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*************** cat-news end******************/
 
 .calendar {
   &_txt {
@@ -318,102 +539,6 @@
 
 /************ calender end ************/
 
-.cat-news {
-  background-image: url("../images/layout/cat_cover.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  color: $black;
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-    .title-box {
-      width: 45%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .contents {
-      width: 55%;
-      padding: 100px 0;
-      .cat-news__list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-
-        > li {
-          width: calc(50% - 30px);
-          padding: 30px;
-          box-sizing: border-box;
-          background-color: rgba(255, 255, 255, 0.45);
-          border-radius: 20px;
-          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.55);
-
-          .num_arrow {
-            font-size: 48px;
-            font-weight: 900;
-            color: $red;
-          }
-
-          .title {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-bottom: 15px;
-            margin-bottom: 20px;
-            h3 {
-              font-size: 40px;
-              text-transform: uppercase;
-            }
-            span {
-              display: flex;
-              align-items: center;
-            }
-            span:after {
-              font-size: 24px;
-              @include icon("trending_flat");
-            }
-          }
-          &:nth-child(1) .title span:after {
-            display: none;
-          }
-          ul {
-            li {
-              margin-top: 10px;
-              a {
-                display: block;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                padding-right: 100px;
-                position: relative;
-
-                .date {
-                  position: absolute;
-                  right: 0;
-                }
-              }
-            }
-          }
-          .num {
-            &_main {
-              font-size: 48px;
-              font-weight: 900;
-            }
-            &_state {
-              color: $blue;
-            }
-            &_company {
-              margin-left: auto;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-/*************** cat-news end******************/
 /**************************************/
 // keyframe
 

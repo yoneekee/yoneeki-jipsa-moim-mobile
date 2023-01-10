@@ -35,7 +35,8 @@ const typing_normal = function (textArray, className) {
   setTimeout(typing, 1000);
 };
 
-typing_normal(["집사 모임에", "오신 것을", "정말 환영합니다!"], ".text_0");
+typing_normal(["집사 모임에 오신 것을", "정말 정말 환영합니다!"], ".text_0");
 typing_normal(["다묘 집사들 모임"], ".text_1");
 typing_normal(["노묘 집사들 모임"], ".text_2");
 typing_normal(["예비 집사들 모임"], ".text_3");
+typing_normal(["집사 모임의", "진짜 귀여운 고양이를 선발합니다"], ".text_4");

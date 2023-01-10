@@ -32,14 +32,11 @@
     <link rel="stylesheet" href="../css/layout.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/aos.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="../css/swiper-bundle.css" />
     <!-- css -->
 
     <script src="../js/aos.js"></script>
-    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/swiper-bundle.js"></script>
     <script src="../js/calender.js"></script>
     <!-- js -->
   </head>
@@ -132,14 +129,14 @@
         <h2 class="hidden">main video</h2>
         <video src="../video/cat.mp4" autoplay muted loop></video>
         <div class="main-video__txt">
-          <h1 data-aos="fade-left" data-aos-delay="400">Cat</h1>
-          <h2 data-aos="fade-right" data-aos-delay="500">Rules</h2>
+          <h1 data-aos="fade-left" data-aos-delay="400">World's</h1>
+          <h2 data-aos="fade-right" data-aos-delay="500">Best</h2>
           <h1>
             <span class="lightpurple" data-aos="fade-up" data-aos-delay="700"
-              >the</span
+              >Cat</span
             >
             <span class="purple" data-aos="fade-up" data-aos-delay="900"
-              >World</span
+              >Community</span
             >
           </h1>
         </div>
@@ -154,6 +151,7 @@
       <!-- main-video-->
 
       <section class="typing center" data-aos="fade" data-aos-delay="700">
+        <div></div>
         <div class="type">
           <h1 class="text_0"></h1>
         </div>
@@ -163,7 +161,7 @@
       <section class="banner container">
         <div class="banner-wrap" data-aos="fade-down" data-aos-delay="600">
           <a href="">
-            <img src="../images/layout/cat_favi_01.png" alt="" />
+            <img src="../images/layout/cat_favi_01.png" alt="alt" />
             <h2>다묘 모임</h2>
             <p>
               <span class="arrow-left text_1"></span>
@@ -175,7 +173,7 @@
         </div>
         <div class="banner-wrap" data-aos="fade-up" data-aos-delay="300">
           <a href="">
-            <img src="../images/layout/cat_favi_06.png" alt="" />
+            <img src="../images/layout/cat_favi_06.png" alt="alt" />
             <h2>노묘 모임</h2>
             <p>
               <span class="arrow-left text_2"></span>
@@ -187,7 +185,7 @@
         </div>
         <div class="banner-wrap" data-aos="fade-down" data-aos-delay="1000">
           <a href="">
-            <img src="../images/layout/cat_favi_03.png" alt="" />
+            <img src="../images/layout/cat_favi_03.png" alt="alt" />
             <h2>예비 집사</h2>
             <p>
               <span class="arrow-left text_3"></span>
@@ -200,98 +198,161 @@
       </section>
       <!-- banner end -->
 
+      <section class="competition">
+        <div class="title-box">
+          <h2>진짜 귀여운 고양이 선발대회</h2>
+          <p>집사 모임에서 제일 귀여운 고양이 선발합니다.</p>
+        </div>
+
+        <div class="competiton_wrap" data-aos="fade-up" data-aos-delay="400">
+          <ul class="competition-list swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="img-box">
+                <img src="../images/main/cat (1).jpg" alt="cat" />
+              </div>
+              <span class="title">Catdidate 01</span>
+              <span class="sticker">Trending</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="img-box">
+                <img src="../images/main/cat (2).jpg" alt="cat" />
+              </div>
+              <span class="title">Catdidate 02</span>
+              <span class="sticker">Trending</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="img-box">
+                <img src="../images/main/cat (3).jpg" alt="cat" />
+              </div>
+              <span class="title">Catdidate 03</span>
+              <span class="sticker">Trending</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="img-box">
+                <img src="../images/main/cat (4).jpg" alt="cat" />
+              </div>
+              <span class="title">Catdidate 04</span>
+              <span class="sticker">Trending</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="img-box">
+                <img src="../images/main/cat (5).jpg" alt="cat" />
+              </div>
+              <span class="title">Catdidate 05</span>
+              <span class="sticker">Trending</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="img-box">
+                <img src="../images/main/cat (6).jpg" alt="cat" />
+              </div>
+              <span class="title">Catdidate 06</span>
+              <span class="sticker">Trending</span>
+            </li>
+          </ul>
+
+          <button class="btn btn--prev"></button>
+          <button class="btn btn--next"></button>
+        </div>
+        <div class="vote">
+          <a href="">
+            <h2>투표하러가기</h2>
+          </a>
+        </div>
+      </section>
+      <!-- competition section end -->
+
       <section class="cat-news section">
         <div class="container">
           <div class="title-box">
-            <h2>글로벌 블록체인 리딩</h2>
+            <h2>집사 모임</h2>
             <p>
-              독보적 메인넷과 플랫폼 기술로 <br />
-              글로벌 블록체인 리딩을 실현합니다.
+              캔따개들이 <br />
+              전 세계 고양이를 응원합니다 🤞
             </p>
-            <a href="">Investor Relations</a>
+            <a href="">고양이 응원하러 가기</a>
           </div>
 
           <div class="contents">
             <ul class="cat-news__list">
-              <li>
+              <li data-aos="fade-up" data-aos-delay="100">
                 <div class="title">
                   <h3>집사 회원 수</h3>
-                  <span>2023. 01. 10.</span>
+                  <span>2023. 05. 04.</span>
                 </div>
                 <hr />
                 <div class="num">
-                  <span class="num_main">5,230</span>
+                  <span class="num_main">123,456</span>
                   <span class="material-icons num_arrow">arrow_drop_up</span>
                   <span class="num_company">Jipsa Moim</span>
                 </div>
               </li>
               <!-- li (1) -->
-              <li>
+              <li data-aos="fade-up" data-aos-delay="200">
                 <div class="title">
-                  <h3>NEWS</h3>
-                  <span>다날 소식</span>
+                  <h3>공지사항</h3>
+                  <span>보러가기</span>
                 </div>
                 <hr />
                 <div class="">
                   <ul>
                     <li>
                       <a href=""
-                        >다날, 전자결제 상장기업 브랜드 평판 1위
-                        <span class="date">2022. 12. 30</span>
+                        >날씨가 추우니 고양이들을 위해 보일러...
+                        <span class="date">2023. 01. 30</span>
                       </a>
                     </li>
                     <li>
                       <a href=""
-                        >다날, 전자결제 상장기업 브랜드 평판 1위
-                        <span class="date">2022. 12. 31</span>
+                        >사료 및 캔 공구 관련 알림 (정가 대비 ...
+                        <span class="date">2023. 01. 31</span>
                       </a>
                     </li>
                   </ul>
                 </div>
               </li>
               <!-- li (2)-->
-              <li>
+              <li data-aos="fade-up" data-aos-delay="300">
                 <div class="title">
                   <h3>NEWS</h3>
-                  <span>공시 정보</span>
+                  <span>집모 소식</span>
                 </div>
                 <hr />
                 <div class="">
                   <ul>
                     <li>
                       <a href=""
-                        >다날, 전자결제 상장기업 브랜드 평판 1위
-                        <span class="date">2022. 12. 30</span>
+                        >집모, 고양이들이 뽑은 최고의 사이트 1위
+                        <span class="date">2023. 01. 17</span>
                       </a>
                     </li>
                     <li>
                       <a href=""
-                        >다날, 전자결제 상장기업 브랜드 평판 1위
-                        <span class="date">2022. 12. 31</span>
+                        >집모, 집사들이 뽑은 최고의 사이트 1위
+                        <span class="date">2023. 01. 31</span>
                       </a>
                     </li>
                   </ul>
                 </div>
               </li>
               <!-- li (3)-->
-              <li>
+              <li data-aos="fade-up" data-aos-delay="400">
                 <div class="title">
-                  <h3>NEWS</h3>
-                  <span>공시 정보</span>
+                  <h3>생생정보</h3>
+                  <span>보러가기</span>
                 </div>
                 <hr />
                 <div class="">
                   <ul>
                     <li>
                       <a href=""
-                        >다날, 전자결제 상장기업 브랜드 평판 1위
-                        <span class="date">2022. 12. 30</span>
+                        >고양이들에게 왜 페퍼민트가 해로울까요?
+                        <span class="date">2023. 03. 30</span>
                       </a>
                     </li>
                     <li>
                       <a href=""
-                        >다날, 전자결제 상장기업 브랜드 평판 1위
-                        <span class="date">2022. 12. 31</span>
+                        >우리 고양이 신장 건강을 지키는 10가지 방..
+                        <span class="date">2022. 04. 31</span>
                       </a>
                     </li>
                   </ul>
@@ -458,6 +519,17 @@
       AOS.init({
         duration: 600,
         delay: 200,
+      });
+
+      // swiper
+      const swiper = new Swiper(".competiton_wrap", {
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+          nextEl: ".competiton_wrap .btn--next",
+          prevEl: ".competiton_wrap .btn--prev",
+        },
       });
 
       const header = document.querySelector(".header");
