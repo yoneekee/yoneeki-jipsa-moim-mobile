@@ -10,7 +10,7 @@
   filter: brightness(75%);
 }
 .main-video__txt {
-  font-size: 96px;
+  font-size: 80px;
   font-weight: 700;
   position: absolute;
   top: 50%;
@@ -200,6 +200,12 @@
   text-align: center;
   border-radius: 40px;
 }
+.competition .vote:hover {
+  color: rgb(39, 35, 35);
+  border: 1px solid #792b85;
+  background-color: #fff;
+  padding: 19px 39px;
+}
 
 /*********** competition end **************/
 .cat-news {
@@ -207,6 +213,7 @@
   background-size: cover;
   background-attachment: fixed;
   color: rgb(39, 35, 35);
+  padding: 100px 0;
 }
 .cat-news h2 {
   font-size: 64px;
@@ -229,6 +236,12 @@
   align-items: center;
   justify-content: center;
 }
+.cat-news .container .title-box a:hover {
+  background-color: #fff;
+  color: rgb(39, 35, 35);
+  padding: 0 30px;
+  border-radius: 20px;
+}
 .cat-news .container .contents {
   width: 55%;
   padding: 100px 0;
@@ -239,8 +252,9 @@
   gap: 30px;
 }
 .cat-news .container .contents .cat-news__list > li {
-  width: calc(50% - 30px);
+  width: calc(50% - 40px);
   padding: 30px;
+  margin: 9px;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.45);
   border-radius: 20px;
