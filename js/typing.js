@@ -1,4 +1,6 @@
 /********************************* */
+
+const lastLeft = " ";
 const typing_normal = function (textArray, className) {
   const $text = document.querySelector(className);
   const letters = textArray;
@@ -35,9 +37,12 @@ const typing_normal = function (textArray, className) {
   setTimeout(typing, 800);
 };
 
-typing_normal(["집사 모임에 오신 것을", "정말 정말 환영합니다!"], ".text_0");
-typing_normal(["집사 모임에서 제일 귀여운 고양이 선발합니다."], ".text_1");
 typing_normal(
-  ["유튜버 냥냥 님 강의", "모임 장소는", "종로3가 근처 예정ᓚᘏᗢ"],
+  ["집사 모임에", "오신 것을", "정말 정말", "환영합니다!"],
+  ".text_0"
+);
+typing_normal(["집사 모임에서 제일 귀여운", "고양이 선발합니다."], ".text_1");
+typing_normal(
+  ["유튜버 냥냥 님 강의", "모임 장소는", "종로3가 근처", "ᓚᘏᗢ"],
   ".text_2"
 );

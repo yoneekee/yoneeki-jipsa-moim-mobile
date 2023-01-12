@@ -2,3 +2,12 @@
   display: none;
   visibility: hidden;
 }
+
+.typeBlank {
+  opacity: 0;
+  color: white;
+}
+
+.typeText {
+  display: inline-block;
+}

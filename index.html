@@ -31,11 +31,11 @@
     <link rel="stylesheet" href="./css/pretendard.css" />
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/aos.css" />
+    <!-- <link rel="stylesheet" href="./css/aos.css" /> -->
     <link rel="stylesheet" href="./css/swiper-bundle.css" />
     <!-- css -->
 
-    <script src="./js/aos.js"></script>
+    <!-- <script src="./js/aos.js"></script> -->
     <script src="./js/swiper-bundle.js"></script>
     <script src="./js/calender.js"></script>
     <!-- js -->
@@ -118,9 +118,12 @@
           </li>
         </ul>
       </nav>
-      <a href="" class="link"
-        ><span>가입/<br />로그인</span></a
-      >
+      <a href="" class="link">가입/<br />로그인</a>
+      <button class="btn btn--all">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
     <!-- header end -->
 
@@ -129,15 +132,11 @@
         <h2 class="hidden">main video</h2>
         <video src="./video/cat.mp4" autoplay muted loop></video>
         <div class="main-video__txt">
-          <h1 data-aos="fade-left" data-aos-delay="400">World's</h1>
-          <h2 data-aos="fade-right" data-aos-delay="500">Best</h2>
+          <h1>World's</h1>
+          <h2>Best</h2>
           <h1>
-            <span class="lightpurple" data-aos="fade-up" data-aos-delay="700"
-              >Cat</span
-            >
-            <span class="purple" data-aos="fade-up" data-aos-delay="900"
-              >Community</span
-            >
+            <span class="lightpurple">Cat</span>
+            <span class="purple">Community</span>
           </h1>
         </div>
         <div class="arrow">
@@ -150,40 +149,41 @@
       </section>
       <!-- main-video-->
 
-      <section class="typing center" data-aos="fade" data-aos-delay="700">
+      <section class="typing center">
         <div></div>
         <div class="type">
-          <h1 class="text_0"></h1>
+          <h1 class="typeBlank typeText">b</h1>
+          <h1 class="text_0 typeText"></h1>
         </div>
       </section>
       <!-- typing end -->
 
       <section class="banner container">
-        <div class="banner-wrap" data-aos="fade-down" data-aos-delay="600">
+        <div class="banner-wrap">
           <a href="">
             <img src="./images/layout/cat_favi_01.png" alt="alt" />
             <h2>다묘 모임</h2>
             <p>
               <span class="arrow-left">다묘 집사들 모임</span>
-              <span class="material-symbols-outlined arrow-right arrow">
+              <span class="material-symbols-outlined arrow-right">
                 arrow_forward_ios
               </span>
             </p>
           </a>
         </div>
-        <div class="banner-wrap" data-aos="fade-up" data-aos-delay="300">
+        <div class="banner-wrap">
           <a href="">
             <img src="./images/layout/cat_favi_06.png" alt="alt" />
             <h2>노묘 모임</h2>
             <p>
               <span class="arrow-left">노묘 집사들 모임</span>
-              <span class="material-symbols-outlined arrow-right arrow">
+              <span class="material-symbols-outlined arrow-right">
                 arrow_forward_ios
               </span>
             </p>
           </a>
         </div>
-        <div class="banner-wrap" data-aos="fade-down" data-aos-delay="1000">
+        <div class="banner-wrap">
           <a href="">
             <img src="./images/layout/cat_favi_03.png" alt="alt" />
             <h2>예비 집사</h2>
@@ -201,10 +201,11 @@
       <section class="competition">
         <div class="title-box">
           <h2>진짜 귀여운 고양이 선발대회</h2>
-          <p class="text_1"></p>
+          <p class="typeBlank typeText">b</p>
+          <p class="text_1 typeText"></p>
         </div>
 
-        <div class="competiton_wrap" data-aos="fade-up" data-aos-delay="400">
+        <div class="competiton_wrap">
           <ul class="competition-list swiper-wrapper">
             <li class="swiper-slide">
               <div class="img-box">
@@ -274,7 +275,7 @@
 
           <div class="contents">
             <ul class="cat-news__list">
-              <li data-aos="fade-up" data-aos-delay="100">
+              <li>
                 <div class="title">
                   <h3>집사 회원 수</h3>
                   <span>2023. 05. 04.</span>
@@ -287,7 +288,7 @@
                 </div>
               </li>
               <!-- li (1) -->
-              <li data-aos="fade-up" data-aos-delay="200">
+              <li>
                 <div class="title">
                   <h3>공지사항</h3>
                   <span>보러가기</span>
@@ -311,7 +312,7 @@
                 </div>
               </li>
               <!-- li (2)-->
-              <li data-aos="fade-up" data-aos-delay="300">
+              <li>
                 <div class="title">
                   <h3>NEWS</h3>
                   <span>집모 소식</span>
@@ -335,7 +336,7 @@
                 </div>
               </li>
               <!-- li (3)-->
-              <li data-aos="fade-up" data-aos-delay="400">
+              <li>
                 <div class="title">
                   <h3>생생정보</h3>
                   <span>보러가기</span>
@@ -364,164 +365,9 @@
         </div>
       </section>
       <!-- cat-news section -->
-
-      <section class="calendar container">
-        <div class="calendar_cal" data-aos="fade-right">
-          <div class="calendar-wrap">
-            <h2 class="month-year">January 2023</h2>
-
-            <table class="calendar">
-              <thead>
-                <tr>
-                  <th class="day-title" scope="col">Sun</th>
-                  <th class="day-title" scope="col">Mon</th>
-                  <th class="day-title" scope="col">Tue</th>
-                  <th class="day-title" scope="col">Wed</th>
-                  <th class="day-title" scope="col">Thu</th>
-                  <th class="day-title" scope="col">Fri</th>
-                  <th class="day-title" scope="col">Sat</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="week">
-                  <td class="day prev-mon" tabindex="0">
-                    <span class="day-number">29</span>
-                  </td>
-                  <td class="day prev-mon" tabindex="0">
-                    <span class="day-number">30</span>
-                  </td>
-                  <td class="day prev-mon" tabindex="0">
-                    <span class="day-number">31</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">1</span>
-                  </td>
-                  <td class="day today" tabindex="0">
-                    <span class="day-number">2</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">3</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">4</span>
-                  </td>
-                </tr>
-                <tr class="week">
-                  <td class="day" tabindex="0">
-                    <span class="day-number">5</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">6</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">7</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">8</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">9</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">10</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">11</span>
-                  </td>
-                </tr>
-                <tr class="week">
-                  <td class="day" tabindex="0">
-                    <span class="day-number">12</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">13</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">14</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">15</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">16</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">17</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">18</span>
-                  </td>
-                </tr>
-                <tr class="week">
-                  <td class="day" tabindex="0">
-                    <span class="day-number">19</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">20</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">21</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">22</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">23</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">24</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">25</span>
-                  </td>
-                </tr>
-                <tr class="week">
-                  <td class="day" tabindex="0">
-                    <span class="day-number">26</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">27</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">28</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">29</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">30</span>
-                  </td>
-                  <td class="day" tabindex="0">
-                    <span class="day-number">31</span>
-                  </td>
-                  <td class="day next-mon" tabindex="0">
-                    <span class="day-number">1</span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <a class="button reset">Clear date-range</a>
-          </div>
-        </div>
-
-        <div class="calendar_txt" data-aos="fade-down" data-aos-delay="700">
-          <h1>정기 집사 모임</h1>
-          <h2>스케쥴을 확인해 보세요</h2>
-          <p>이번 달 이벤트 :</p>
-          <p class="text_2"></p>
-        </div>
-      </section>
-      <!-- calendar end -->
     </main>
 
     <script>
-      // aos
-      AOS.init({
-        duration: 600,
-        delay: 200,
-      });
-
       // swiper
       const swiper = new Swiper(".competiton_wrap", {
         slidesPerView: "auto",
@@ -533,27 +379,41 @@
         },
       });
 
+      // 찾아서 이벤트 걸고 제어하면 된다.
+      // vanilla script   jQuery
+      const btnAll = document.querySelector(".btn--all");
       const header = document.querySelector(".header");
-      const gnb = document.querySelector(".gnb");
-      const link = document.querySelector(".link");
-      gnb.addEventListener("mouseenter", function () {
-        header.classList.add("on");
-        link.classList.add("hidden");
-      });
-      gnb.addEventListener("mouseleave", function () {
-        header.classList.remove("on");
-        link.classList.remove("hidden");
-      });
+      const depth01 = document.querySelectorAll(".gnb .gnb__list > li > a");
+      const depth02 = document.querySelectorAll(
+        ".gnb .gnb__list > li > .gnb__list--sub"
+      );
+      const total = depth01.length;
+      for (let i = 0; i < total; i++) {
+        depth01[i].addEventListener("click", function (e) {
+          e.preventDefault();
+          for (let j = 0; j < total; j++) {
+            if (i !== j) {
+              depth02[j].classList.remove("on");
+            }
+          }
+          depth02[i].classList.toggle("on");
+        });
+      }
 
-      window.addEventListener("scroll", function (e) {
-        if (window.scrollY > 0) {
-          header.classList.add("on2");
+      btnAll.addEventListener("click", function () {
+        const isContains = header.classList.contains("on");
+        if (isContains) {
+          header.classList.remove("on");
+          setTimeout(function () {
+            for (let i = 0; i < total; i++) {
+              depth02[i].classList.remove("on");
+            }
+          }, 250);
         } else {
-          header.classList.remove("on2");
+          header.classList.add("on");
         }
       });
     </script>
-
     <script src="./js/typing.js"></script>
     <!--js-->
   </body>
