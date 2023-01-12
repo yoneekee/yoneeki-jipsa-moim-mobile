@@ -22,8 +22,8 @@
   margin-bottom: 10px;
 }
 .section .container .title-box a {
-  font-size: clamp(14px, 3.5vw, 24px);
   display: flex;
+  font-size: clamp(14px, 3.5vw, 24px);
   align-items: center;
 }
 .section .container .title-box a::after {
@@ -34,8 +34,8 @@
 }
 
 .main-video {
-  width: 100%;
   top: 0;
+  width: 100%;
   z-index: -1;
 }
 .main-video video {
@@ -45,11 +45,11 @@
   filter: brightness(75%);
 }
 .main-video__txt {
-  font-size: clamp(32px, 6.5vw, 48px);
-  font-weight: 700;
   position: absolute;
   top: 50%;
   left: 30px;
+  font-size: clamp(32px, 6.5vw, 48px);
+  font-weight: 700;
   transform: translateY(-50%);
   color: #fff;
 }
@@ -61,17 +61,17 @@
 }
 .main-video .arrow {
   position: absolute;
-  flex-direction: column;
-  left: 30px;
   bottom: 60px;
+  left: 30px;
+  flex-direction: column;
   width: 90px;
   height: 90px;
   border: 2px dotted #c4a1ca;
   border-radius: 50%;
+  animation: arrow-move 0.5s ease infinite alternate;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: arrow-move 0.5s ease infinite alternate;
 }
 .main-video .arrow img {
   width: 50px;
@@ -95,8 +95,8 @@
   align-items: center;
 }
 .typing .type {
-  position: absolute;
   display: flex;
+  position: absolute;
   flex-direction: row;
   margin-left: 20px;
 }
@@ -115,8 +115,8 @@
 
 /************** typing end *************/
 .banner {
-  margin: 10px 0;
   display: flex;
+  margin: 10px 0;
   justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 80px;
@@ -125,8 +125,8 @@
   line-height: 2;
 }
 .banner .banner-wrap {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
   text-align: center;
   margin-left: 5px;
   margin-bottom: 10px;
@@ -146,8 +146,8 @@
   object-fit: cover;
 }
 .banner .banner-wrap .arrow-left {
-  width: 65%;
   display: inline-block;
+  width: 65%;
   animation: arrow-left 0.5s ease infinite alternate;
 }
 .banner .banner-wrap .arrow-right {
@@ -181,8 +181,8 @@
   position: relative;
 }
 .competition .competition-list li {
-  width: 150px;
   position: relative;
+  width: 150px;
 }
 .competition .competition-list li .img-box {
   width: 150px;
@@ -198,19 +198,19 @@
 }
 .competition .competition-list li .sticker {
   position: absolute;
+  top: 10px;
+  left: 50%;
   color: #fff;
   padding: 5px 15px;
   border-radius: 100px;
   text-transform: uppercase;
   opacity: 0.85;
-  text-shadow: 1px 1px 0px #ff1801,2px 2px 0px #ff1801,3px 3px 0px #ff1801,4px 4px 0px #ff1801,5px 5px 0px #ff1801,6px 6px 0px #ff1801,7px 7px 0px #ff1801,8px 8px 0px #ff1801,9px 9px 0px #ff1801,10px 10px 0px #ff1801,11px 11px 0px #ff1801,12px 12px 0px #ff1801,13px 13px 0px #ff1801,14px 14px 0px #ff1801,15px 15px 0px #ff1801,16px 16px 0px #ff1801,17px 17px 0px #ff1801,18px 18px 0px #ff1801,19px 19px 0px #ff1801,20px 20px 0px #ff1801;
   overflow: hidden;
   box-sizing: border-box;
   background-color: #ff4634;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  top: 10px;
-  left: 50%;
   white-space: nowrap;
+  text-shadow: 1px 1px 0px #ff1801,2px 2px 0px #ff1801,3px 3px 0px #ff1801,4px 4px 0px #ff1801,5px 5px 0px #ff1801,6px 6px 0px #ff1801,7px 7px 0px #ff1801,8px 8px 0px #ff1801,9px 9px 0px #ff1801,10px 10px 0px #ff1801,11px 11px 0px #ff1801,12px 12px 0px #ff1801,13px 13px 0px #ff1801,14px 14px 0px #ff1801,15px 15px 0px #ff1801,16px 16px 0px #ff1801,17px 17px 0px #ff1801,18px 18px 0px #ff1801,19px 19px 0px #ff1801,20px 20px 0px #ff1801;
 }
 .competition .competition-list li .sticker span {
   font-size: clamp(13px, 2.5vw, 24px);
@@ -222,9 +222,9 @@
 }
 .competition .btn {
   position: absolute;
+  top: 50%;
   width: 40px;
   height: 40px;
-  top: 50%;
   transform: translateY(-50%);
   background-color: #fff;
   border-radius: 50%;
@@ -297,15 +297,15 @@
 }
 .cat-news .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cat-news .container .title-box {
-  width: 100%;
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -350,8 +350,8 @@
   text-transform: uppercase;
 }
 .cat-news .container .contents .cat-news__list > li .title span {
-  font-size: clamp(16px, 4vw, 24px);
   display: flex;
+  font-size: clamp(16px, 4vw, 24px);
   align-items: center;
 }
 .cat-news .container .contents .cat-news__list > li .title span:after {
@@ -371,12 +371,12 @@
   margin-left: 30px;
 }
 .cat-news .container .contents .cat-news__list > li ul li a {
-  text-align: start;
   display: block;
+  position: relative;
+  text-align: start;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  position: relative;
   color: rgb(39, 35, 35);
 }
 .cat-news .container .contents .cat-news__list > li ul li a .date {

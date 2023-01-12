@@ -24,8 +24,8 @@
         margin-bottom: 10px;
       }
       a {
-        font-size: clamp(14px, 3.5vw, 24px);
         display: flex;
+        font-size: clamp(14px, 3.5vw, 24px);
         align-items: center;
         &::after {
           @include icon("keyboard_arrow_right");
@@ -36,8 +36,8 @@
 }
 
 .main-video {
-  width: 100%;
   top: 0;
+  width: 100%;
   z-index: -1;
 
   video {
@@ -47,11 +47,11 @@
     filter: brightness(75%);
   }
   &__txt {
-    font-size: clamp(32px, 6.5vw, 48px);
-    font-weight: 700;
     position: absolute;
     top: 50%;
     left: 30px;
+    font-size: clamp(32px, 6.5vw, 48px);
+    font-weight: 700;
     transform: translateY(-50%);
     color: #fff;
     //animation: arrow-move 1s ease infinite alternate;
@@ -65,15 +65,15 @@
 
   .arrow {
     position: absolute;
-    flex-direction: column;
-    left: 30px;
     bottom: 60px;
+    left: 30px;
+    flex-direction: column;
     width: 90px;
     height: 90px;
     border: 2px dotted $lightpurple;
     border-radius: 50%;
-    @include center();
     animation: arrow-move 0.5s ease infinite alternate;
+    @include center();
     img {
       width: 50px;
       margin-left: 5px;
@@ -95,8 +95,8 @@
   //border: solid red 1px;
 
   .type {
-    position: absolute;
     display: flex;
+    position: absolute;
     flex-direction: row;
     margin-left: 20px;
     .text_0 {
@@ -116,8 +116,8 @@
 /************** typing end *************/
 
 .banner {
-  margin: 10px 0;
   display: flex;
+  margin: 10px 0;
   justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 80px;
@@ -126,8 +126,8 @@
   }
 
   .banner-wrap {
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
     text-align: center;
     margin-left: 5px;
     margin-bottom: 10px;
@@ -148,8 +148,8 @@
     }
 
     .arrow-left {
-      width: 65%;
       display: inline-block;
+      width: 65%;
       // 애니메이션 먹이기 위해서 작성한 부분
       // 인라인 속성은 애니메이션 안 먹음
       animation: arrow-left 0.5s ease infinite alternate;
@@ -190,8 +190,8 @@
 
   .competition-list {
     li {
-      width: 150px;
       position: relative;
+      width: 150px;
 
       .img-box {
         width: 150px;
@@ -208,19 +208,19 @@
 
       .sticker {
         position: absolute;
+        top: 10px;
+        left: 50%;
         color: #fff;
         padding: 5px 15px;
         border-radius: 100px;
         text-transform: uppercase;
         opacity: 0.85;
-        @include longShadow(20, darken($red, 10));
         overflow: hidden;
         box-sizing: border-box;
         background-color: $red;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-        top: 10px;
-        left: 50%;
         white-space: nowrap; // 무조건 두 줄 안 되고 한줄로
+        @include longShadow(20, darken($red, 10));
         span {
           font-size: clamp(13px, 2.5vw, 24px);
         }
@@ -236,9 +236,9 @@
 
   .btn {
     position: absolute;
+    top: 50%;
     width: 40px;
     height: 40px;
-    top: 50%;
     transform: translateY(-50%);
     background-color: #fff;
     border-radius: 50%;
@@ -308,13 +308,13 @@
   }
 
   .container {
-    @include center();
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include center();
     .title-box {
-      width: 100%;
       display: flex;
+      width: 100%;
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -361,8 +361,8 @@
               text-transform: uppercase;
             }
             span {
-              font-size: clamp(16px, 4vw, 24px);
               display: flex;
+              font-size: clamp(16px, 4vw, 24px);
               align-items: center;
             }
             span:after {
@@ -380,12 +380,12 @@
                 margin-left: 30px;
               }
               a {
-                text-align: start;
                 display: block;
+                position: relative;
+                text-align: start;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                position: relative;
                 color: $black;
 
                 .date {
